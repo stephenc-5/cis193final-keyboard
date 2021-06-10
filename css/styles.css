@@ -1,0 +1,112 @@
+/*
+CIS193 - Final Project - Keyboard
+
+Author:         Stephen Chang
+Date:           6/8/2021
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #45D6B3; */
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: change 20s ease-in-out infinite;
+    color: #ffffff;
+    margin: 0;
+    min-height: 100vh; /* view height */
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h1 {
+    padding: 50px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: 3px solid #ffffff;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0 50%
+    }
+}
+
+.keyboard {
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px black;
+}
+
+.key {
+    height: calc(var(--width) * 4);
+    width: var(--width);
+    border-radius: 5px;
+}
+
+.white {
+    --width: 100px;
+    background-color: white;
+    border: 1px solid black;
+
+}
+
+.white.active {
+    background-color: #CCCCCC;
+}
+
+.white.showkey {
+    color: red;
+    text-align: center;
+}
+
+.black {
+    --width: 60px;
+    background-color: black;
+    margin-left: calc(var(--width) / -2);
+    margin-right: calc(var(--width) / -2);
+    z-index: 1;
+
+}
+
+.black.active {
+    background-color: #333333;
+}
+
+.black.showkey span {
+    color: red;
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background: linear-gradient(45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+        background-size: 400% 400%;
+    }
+    .keyboard {
+        transform: rotate(90deg);
+    }
+    section {
+        display: none;
+    }
+}

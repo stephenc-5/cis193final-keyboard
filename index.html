@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    CIS193 - Final Project - Keyboard
+    
+    Author:         Stephen Chang
+    Date:           6/8/2021
+
+   -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Keyboard</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/keyboard.js" defer></script>
+</head>
+<body>
+    <section>
+        <h1>Virtual Keys</h1>
+    </section>
+    <div class="keyboard">
+        <div class="key white" data-note="C">Z</div>
+        <div class="key black" data-note="Db">S</div>
+        <div class="key white" data-note="D">X</div>
+        <div class="key black" data-note="Eb">D</div>
+        <div class="key white" data-note="E">C</div>
+        <div class="key white" data-note="F">V</div>
+        <div class="key black" data-note="Gb">G</div>
+        <div class="key white" data-note="G">B</div>
+        <div class="key black" data-note="Ab">H</div>
+        <div class="key white" data-note="A">N</div>
+        <div class="key black" data-note="Bb">J</div>
+        <div class="key white" data-note="B">M</div>
+    </div>
+    <span id="audiohtml">
+    <audio preload="auto" id="C" src="sound/piano/c4.mp3"></audio>
+    <audio preload="auto" id="Db" src="sound/piano/c-4.mp3"></audio>
+    <audio preload="auto" id="D" src="sound/piano/d4.mp3"></audio>
+    <audio preload="auto" id="Eb" src="sound/piano/d-4.mp3"></audio>
+    <audio preload="auto" id="E" src="sound/piano/e4.mp3"></audio>
+    <audio preload="auto" id="F" src="sound/piano/f4.mp3"></audio>
+    <audio preload="auto" id="Gb" src="sound/piano/f-4.mp3"></audio>
+    <audio preload="auto" id="G" src="sound/piano/g4.mp3"></audio>
+    <audio preload="auto" id="Ab" src="sound/piano/g-4.mp3"></audio>
+    <audio preload="auto" id="A" src="sound/piano/a5.mp3"></audio>
+    <audio preload="auto" id="Bb" src="sound/piano/a-5.mp3"></audio>
+    <audio preload="auto" id="B" src="sound/piano/b5.mp3"></audio>
+    </span>
+</body>
+</html>
