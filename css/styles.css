@@ -20,7 +20,7 @@ body {
     /*background-color: #45D6B3; */
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
     background-size: 400% 400%;
-    animation: change 20s ease-in-out infinite;
+    animation: change-background 20s ease-in-out infinite;
     color: #ffffff;
     margin: 0;
     min-height: 100vh; /* view height */
@@ -42,7 +42,7 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-@keyframes change {
+@keyframes change-background {
     0% {
         background-position: 0 50%
     }
